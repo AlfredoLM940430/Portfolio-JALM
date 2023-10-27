@@ -214,7 +214,7 @@
 
     .bg-opacity1::before {
         @extend .basic-bg-opacity;
-        background-image: image-set(url(/img/journalapp1.avif) 1x, url(/journalapp1.webp) 1x, url(/journalapp1.png) 1x);
+        background-image: image-set(url(/img/journalapp1.avif) 1x, url(/img/journalapp1.webp) 1x, url(/img/journalapp1.png) 1x);
     }
     
     .bg-opacity2::before {
