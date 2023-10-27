@@ -1,0 +1,238 @@
+@use './../base/variables' as v;
+@use './../base/mixins' as m;
+
+.portafolio {
+    background-color: v.$color-primario;
+
+    h2 {
+        padding-top: 2rem;
+    }
+}
+
+.container-proyects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;  
+}
+
+.container-pr {
+    margin-top: 6rem;
+    @include m.pc-xl {
+        margin: 2rem;
+    }
+    @include m.pc {
+        margin: 1rem;
+    }
+}
+
+.container-pr:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.caja1 {
+    display: flex;
+    width: 60%;
+    height: 350px;
+    border-radius: 8px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.caja2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container-left {
+    @extend .container-proyects;
+    text-align: right;
+}
+
+.container-right {
+    @extend .container-proyects;
+    text-align: left;
+}
+
+.left-left {
+    @extend .caja1;
+    z-index: 1;
+}
+
+.right-left {
+    @extend .caja2;
+    margin-left: -150px;
+    z-index: 2;
+}
+
+.right-right {
+    @extend .caja1;
+    z-index: 1;
+}
+
+.left-right {
+    @extend .caja2;
+    margin-right: -150px;
+    position: relative;
+    z-index: 2;
+}
+
+.m-destacados {
+    max-width: 100%;
+    color: white;
+    background-color: rgb(29, 32, 64);
+    border-radius: 0.2rem;
+    max-width: 23rem;
+    padding: 2rem;
+    margin: 0.2rem;
+    @include m.tablet {
+        max-width: 90%;
+    }
+}
+
+.proyecto {
+    width: 100%;
+    height: auto;
+}
+
+.desc-pro {
+    margin: 0;
+    background-color: rgb(29, 32, 64);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    @include m.tablet {
+        background: none;
+        box-shadow: none;
+    }
+}
+
+.under-const {
+    max-height: 220px;
+    max-width: 210px;
+}
+
+#max {
+    background-color: transparent;
+    width: 15rem;
+    @include m.telefono {
+        width: 100%;
+    }
+}
+
+#max:hover {
+    .fa-chevron-down {
+        background-color: darken(v.$color-primario, 1.7);
+        border: none;   
+    }
+    .fa-chevron-up {
+        background-color: darken(v.$color-primario, 1.7);
+        border: none;   
+    }
+}
+
+.fa-chevron-down {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    border-bottom: 1px solid aqua ;
+    border-radius: 2rem;
+}
+
+.fa-chevron-up {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    border-top: 1px solid red;
+    border-radius: 2rem;
+}
+
+.contenido {
+    @include m.tablet {
+        position: relative;
+    }
+}
+
+.logos {
+    max-width: 20px;
+}
+
+.logos_1 {
+    max-width: 35px;
+}
+
+.logos_2 {
+    max-width: 80px;
+}
+
+.fa-git {
+    text-decoration: none;
+}
+
+.escolar {
+    color: v.$color-secundario;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container-left, .container-right {
+        width: 90%;
+        text-align: center;
+        padding: 4rem;
+        margin-top: 1.5rem;
+    }
+
+    .left-left, .right-right {
+        display: none;
+    }
+    .right-left, .left-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bg-opacity1, .bg-opacity2, .bg-opacity3 {
+        position: relative;
+        background-color: #030010;
+    }
+    
+    .basic-bg-opacity {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.05;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 1rem;
+    }
+
+    .bg-opacity1::before {
+        @extend .basic-bg-opacity;
+        background-image: image-set(url(/img/journalapp1.avif) 1x, url(/journalapp1.webp) 1x, url(/journalapp1.png) 1x);
+    }
+    
+    .bg-opacity2::before {
+        @extend .basic-bg-opacity;
+        background-image: image-set(url(/img/camp1.avif) 1x, url(/img/camp1.webp) 1x, url(/img/camp1.png) 1x);
+    }
+
+    .bg-opacity3::before {
+        @extend .basic-bg-opacity;
+        background-image: image-set(url(/img/br1.avif) 1x, url(/img/br1.webp) 1x, url(/img/br1.png) 1x);
+    }
+}
+
+@media (max-width: 580px) {
+    .container-left, .container-right {
+        width: 100%;
+        padding: 4rem 0rem 4rem 0rem;
+    }
+}
+
+

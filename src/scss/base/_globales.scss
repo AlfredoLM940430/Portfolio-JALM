@@ -1,0 +1,86 @@
+@use './../base/variables' as v;
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: v.$color-primario;
+}
+
+p, h1, h2, h3, a, button, label {
+    color: white;
+}
+
+a, button {
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    text-decoration: none;
+}
+
+.aqua {
+    margin: 0;
+    color: aqua;
+}
+
+.bootstrap {
+    max-width: 26px;
+}
+
+.css {
+    max-width: 19px;
+}
+
+.firebase {
+    max-width: 19px;
+}
+
+.gulp {
+    max-width: 10px;
+}
+
+.html {
+    max-width: 18px;
+}
+
+.js {
+    max-width: 19px;
+}
+
+.mongo {
+    max-width: 30px;
+}
+
+.mysql {
+    max-width: 55px;
+}
+
+.node {
+    max-width: 40px;
+}
+
+.react {
+    max-width: 22px;
+}
+
+.sass {    
+    max-width: 24px;
+}
+
+.js {    
+    max-width: 19px;
+}
+
+.php {    
+    max-width: 32px;
+}
+
+.sql {    
+    max-width: 55px;
+}
+
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+//   }
