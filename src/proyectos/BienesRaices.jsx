@@ -8,7 +8,7 @@ export const BienesRaices = () => {
                 <div className="container-left contenido bg-opacity1 container">
                     
                     <div className="left-left contenido" data-aos="fade-right">
-                        <CarouselImage title={'br'} />
+                        <CarouselImage title={'br'} img={3} />
                     </div>
 
                     <div className="right-left contenido" data-aos="fade-left">

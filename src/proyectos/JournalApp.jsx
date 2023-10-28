@@ -8,7 +8,7 @@ export const JournalApp = () => {
                 <div className="container-left contenido bg-opacity1 container">
                     
                     <div className="left-left contenido" data-aos="fade-right">
-                        <CarouselImage title={'journalapp'} />
+                        <CarouselImage title={'journalapp'} img={3} />
                     </div>
 
                     <div className="right-left contenido" data-aos="fade-left">
