@@ -9,6 +9,6 @@
     border-left: 1px solid;
     border-right: 1px solid;
     border-color: v.$color-secundario;
-    box-shadow: rgba(0, 234, 255, 0.3) 0px 8px 20px, rgba(0, 225, 255, 0.22) 0px 5px 12px;
+    box-shadow: rgba(v.$color-secundario, 0.3) 0px 8px 20px, rgba(v.$color-secundario, 0.22) 0px 5px 12px;
     max-width: 35rem;
 }

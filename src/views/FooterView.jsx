@@ -24,4 +24,5 @@ export const FooterView = () => {
                 </div>
             </footer>
         </>
-)}
+    )
+}

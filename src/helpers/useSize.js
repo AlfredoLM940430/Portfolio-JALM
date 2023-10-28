@@ -1,4 +1,4 @@
-export const sizeAuxiliar = (e) => {
+export const useSize = (e) => {
 
     const menuAuxiliar = document.getElementsByClassName('menu-display');
     const menuFoto = document.getElementsByClassName('bg-perfil');

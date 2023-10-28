@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const isRender = (value) => {
+export const useRender = (value) => {
 
     const [isShow, setIsShow] = useState(value);
 
@@ -19,7 +19,7 @@ export const isRender = (value) => {
 
     const masToggle = (e) => {
         
-        let current = isShow;
+        let estado = isShow;
         
         if(e.target.className.includes("fa-chevron-down") || (e.target.innerHTML === 'Mas Proyectos') || (e.target.id === 'remplazoDown')) {
             document.getElementById('remplazoDown').innerHTML = '';
@@ -29,11 +29,11 @@ export const isRender = (value) => {
             document.getElementById('remplazo').innerHTML = botonDown;
         }
 
-        setIsShow(current = !current);
+        setIsShow(estado = !estado);
     }
     
     return {
         masToggle,
-        isShow
+        isShow,
     }
 }

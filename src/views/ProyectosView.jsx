@@ -1,25 +1,15 @@
-import { useState } from "react";
-import { Appsalon } from "../proyectos/Appsalon";
-import { AsistenciaApp } from "../proyectos/AsistenciaApp";
-import { BienesRaices } from "../proyectos/BienesRaices";
-import { BlogCafe } from "../proyectos/BlogCafe";
-import { CRUD } from "../proyectos/CRUD";
-import { CalendarApp } from "../proyectos/CalendarApp";
-import { DevWebCamp } from "../proyectos/DevWebCamp";
-import { Eventos } from "../proyectos/Eventos";
-import { FestivalMusica } from "../proyectos/FestivalMusica";
-import { GifExpertApp } from "../proyectos/GifExpertApp";
-import { HeroesApp } from "../proyectos/HeroesApp";
-import { JournalApp } from "../proyectos/JournalApp";
-import { UpTask } from "../proyectos/UpTask";
-import { isRender } from "../helpers/isRender";
+import { Appsalon, AsistenciaApp, BienesRaices, BlogCafe, CRUD, CalendarApp, DevWebCamp, Eventos, FestivalMusica, GifExpertApp, HeroesApp, JournalApp, UpTask } from "../proyectos/";
+import { useRender, useAuxiliar } from "../helpers/";
+import { AuxView } from "./AuxView";
 
 export const ProyectosView = () => {
 
-    const {isShow, masToggle} = isRender(false);
+    const {isAux} = useAuxiliar();
+    const {isShow, masToggle} = useRender(false);
 
     return (
         <>
+            {isAux && <AuxView/>}
             <div className="portafolio p-3" id="portafolio">
                 <h2 className="text-center">Proyectos</h2>
                 <JournalApp/>
@@ -63,6 +53,5 @@ export const ProyectosView = () => {
                 }
 
             </div>
-            
         </>
 )}

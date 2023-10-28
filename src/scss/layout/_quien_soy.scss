@@ -14,7 +14,7 @@
     width: auto;
     border-radius: 2rem;
     border: 6px;
-    border: 1px solid aqua;
+    border: 1px solid v.$color-secundario;
     @include m.telefono {
         padding: 2rem 2rem 3.5rem 2rem;
     }
@@ -27,7 +27,7 @@
 }
 
 .documentation {
-    color: aqua;
+    color: v.$color-secundario;
 }
 
 .container-tab p {
@@ -94,12 +94,12 @@ select:focus {
 .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
-    border-bottom: 1px solid aqua;
+    border-bottom: 1px solid v.$color-secundario;
 }
 
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-    border-bottom: 2px solid aqua; 
+    border-bottom: 2px solid v.$color-secundario; 
 }
 
 .tabs [class^="tab"] [type="radio"]:checked + div,

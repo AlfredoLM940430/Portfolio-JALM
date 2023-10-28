@@ -84,7 +84,7 @@
 .m-destacados {
     max-width: 100%;
     color: white;
-    background-color: rgb(29, 32, 64);
+    background-color: lighten(v.$color-primario, 7);
     border-radius: 0.2rem;
     max-width: 23rem;
     padding: 2rem;
@@ -101,7 +101,7 @@
 
 .desc-pro {
     margin: 0;
-    background-color: rgb(29, 32, 64);
+    background-color: lighten(v.$color-primario, 7);
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     @include m.tablet {
@@ -136,7 +136,7 @@
 
 .fa-chevron-down {
     padding: 0rem 1.5rem 0rem 1.5rem;
-    border-bottom: 1px solid aqua ;
+    border-bottom: 1px solid v.$color-secundario;
     border-radius: 2rem;
 }
 
