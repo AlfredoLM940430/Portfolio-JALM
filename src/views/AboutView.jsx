@@ -49,4 +49,5 @@ export const AboutView = () => {
                 </div>
             </div>
         </>
-)}
+    )
+}

@@ -29,4 +29,5 @@ export const UpTask = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

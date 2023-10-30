@@ -27,4 +27,5 @@ export const CalendarApp = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

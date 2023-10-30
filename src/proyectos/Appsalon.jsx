@@ -30,4 +30,5 @@ export const Appsalon = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

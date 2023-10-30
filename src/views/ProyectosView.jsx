@@ -1,6 +1,7 @@
 import { Appsalon, AsistenciaApp, BienesRaices, BlogCafe, CRUD, CalendarApp, DevWebCamp, Eventos, FestivalMusica, GifExpertApp, HeroesApp, JournalApp, UpTask } from "../proyectos/";
 import { useRender, useAuxiliar } from "../helpers/";
 import { AuxView } from "./AuxView";
+import { PortfolioApp } from "../proyectos/PortfolioApp";
 
 export const ProyectosView = () => {
 
@@ -15,17 +16,17 @@ export const ProyectosView = () => {
                 <JournalApp/>
                 <DevWebCamp/>
                 <BienesRaices/>
-                <h4 className="text-center mb-4 text-white">Mas Proyectos Destacados</h4>  
-                
+
+                <h4 className="text-center pt-5 m-4 text-white">Mas Proyectos Destacados</h4>  
                 <div className="row d-flex justify-content-center">
                     <CalendarApp/>
                     <Appsalon/>
-                    <GifExpertApp/>
+                    <HeroesApp/>
                 </div>
                 <div className="row d-flex justify-content-center">
-                    <HeroesApp/>
+                    <GifExpertApp/>
                     <UpTask/>
-                    <FestivalMusica/>
+                    <PortfolioApp/>
                 </div>
 
                 <div className="d-flex justify-content-center">
@@ -41,12 +42,13 @@ export const ProyectosView = () => {
                     isShow && (
                         <div className="mas-proyectos mb-4" id="proyectos">
                             <div className="row d-flex justify-content-center">
-                                <BlogCafe/>
+                                <FestivalMusica/>
                                 <AsistenciaApp/>
                                 <Eventos/>
                             </div>
                             <div className="row d-flex justify-content-center">
                                 <CRUD/>
+                                <BlogCafe/>
                             </div>
                         </div>
                     )
@@ -54,4 +56,5 @@ export const ProyectosView = () => {
 
             </div>
         </>
-)}
+    )
+}

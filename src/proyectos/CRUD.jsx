@@ -5,7 +5,7 @@ export const CRUD = () => {
         <>
             <div className="col-lg-4 m-destacados">
                 
-                <h4>CRUD</h4>
+                <h4>CRUD <span className="escolar">*Proyecto Escolar*</span></h4>
 
                 <p className="mb-0">Es una App para crear, editar y eliminar (CRUD) alumnos. Para ello utilizamos AJAX para comunicarnos con el servidor mediante métodos POST, técnica utilizada igualmente  para el inicio de sesión de la aplicación.</p>
                     
@@ -28,4 +28,5 @@ export const CRUD = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

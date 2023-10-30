@@ -7,21 +7,17 @@ export const useMenuRender = () => {
     const [isFoto, setIsFoto] = useState('block');
 
     const onMenuBurger = (e) => {
-        
         e.preventDefault();
-        let foto = isFoto;
-        let menu = isMenu;
-        let margin = isMargin;
         
         if(isMenu === 'none') {
-            setIsMenu(menu = 'block');
-            setIsMargin(margin = '0');
-            setIsFoto(foto = 'none');
+            setIsMenu('block');
+            setIsMargin('0');
+            setIsFoto('none');
             
         } else if(isMenu === 'block') {
-            setIsMenu(menu = 'none');
-            setIsMargin(margin = '112px');
-            setIsFoto(foto = 'block');
+            setIsMenu('none');
+            setIsMargin('112px');
+            setIsFoto('block');
         }
     }
     

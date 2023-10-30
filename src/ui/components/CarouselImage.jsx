@@ -2,6 +2,7 @@
 export const CarouselImage = ({title, img}) => {
         
     let render = [];
+    
     for (let i = 2; i <= img; i++) {
         render.push(
             <div key={i} className="carousel-item">

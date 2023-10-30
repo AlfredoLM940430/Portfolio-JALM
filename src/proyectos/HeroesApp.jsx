@@ -3,7 +3,7 @@ import { TecImg } from "../ui/components/TecImg"
 export const HeroesApp = () => {
     return (
         <>
-            <div className="col-lg-4 m-destacados" data-aos="fade-up-right">
+            <div className="col-lg-4 m-destacados" data-aos="fade-down-left">
                 
                 <h4>HeroesApp</h4>
 
@@ -24,4 +24,5 @@ export const HeroesApp = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

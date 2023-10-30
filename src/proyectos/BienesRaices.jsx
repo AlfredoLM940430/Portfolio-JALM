@@ -49,4 +49,5 @@ export const BienesRaices = () => {
                 </div>
             </section>  
         </>
-)}
+    )
+}

@@ -5,11 +5,14 @@ export const Eventos = () => {
         <>
             <div className="col-lg-4 m-destacados">
                 
-                <h4>Eventos</h4>
+                <h4>Eventos <span className="escolar">*Proyecto Escolar*</span></h4>
                 <p className="mb-0">Es una aplicación que nos ayuda a registrar y agendar eventos, tiene funcionalidad CRUD ademas y principalmente se enfoco en el manejo y adaptación a un proyecto del Plug-in TempusDominus para la gestión fecha y hora en la aplicación. Se utiliza AJAX para la comunicación entre la aplicación y el servidor..</p>
                     
                 <div className="mb-2">
                     <TecImg param={'html'}/>
+                    <span className="aqua m-1">||</span>
+
+                    <TecImg param={'js'}/>
                     <span className="aqua m-1">||</span>
 
                     <TecImg param={'css'}/>
@@ -20,4 +23,5 @@ export const Eventos = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

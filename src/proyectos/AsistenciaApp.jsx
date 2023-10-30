@@ -3,7 +3,7 @@ export const AsistenciaApp = () => {
         <>
             <div className="col-lg-4 m-destacados">
                 
-                <h4>AsistenciaApp <span className="escolar">*Proyecto Final*</span></h4>
+                <h4>AsistenciaApp <span className="escolar">*Proyecto Escolar Final*</span></h4>
                 <div className="d-flex justify-content-center">
                     <picture>
                         <source srcSet="/img/4888526.avif" type="image/avif"/>
@@ -13,4 +13,5 @@ export const AsistenciaApp = () => {
                 </div>
             </div>
         </>
-)}
+    )
+}

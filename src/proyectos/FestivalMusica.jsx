@@ -3,7 +3,7 @@ import { TecImg } from "../ui/components/TecImg"
 export const FestivalMusica = () => {
     return (
         <>
-            <div className="col-lg-4 m-destacados" data-aos="fade-up-left">
+            <div className="col-lg-4 m-destacados">
                 
                 <h4>Festival Musica</h4>
 
@@ -27,4 +27,5 @@ export const FestivalMusica = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

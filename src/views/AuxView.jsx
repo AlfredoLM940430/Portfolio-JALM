@@ -10,4 +10,5 @@ export const AuxView = () => {
                 </picture>
             </a>
         </>
-)}
+    )
+}

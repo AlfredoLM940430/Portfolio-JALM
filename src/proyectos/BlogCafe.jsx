@@ -20,4 +20,5 @@ export const BlogCafe = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}

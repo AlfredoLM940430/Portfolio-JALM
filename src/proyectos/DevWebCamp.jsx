@@ -40,4 +40,5 @@ export const DevWebCamp = () => {
                 </div>
             </section>
         </>
-)}
+    )
+}

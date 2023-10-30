@@ -3,7 +3,7 @@ import { TecImg } from "../ui/components/TecImg"
 export const GifExpertApp = () => {
     return (
         <>
-            <div className="col-lg-4 m-destacados" data-aos="fade-down-left">
+            <div className="col-lg-4 m-destacados" data-aos="fade-up-right">
                 
                 <h4>GifExpertApp</h4>
 
@@ -25,4 +25,5 @@ export const GifExpertApp = () => {
                 </a>
             </div>
         </>
-)}
+    )
+}
