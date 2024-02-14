@@ -18,7 +18,7 @@ export const Eventos = () => {
                     <TecImg param={'css'}/>
                 </div>
 
-                <a href="#" className="fa_git">
+                <a href="https://github.com/AlfredoLM940430/Agenda-Practica.git" className="fa_git">
                     <i className="fa-brands fa-github fa-xl text-white" title="GitHub"></i>
                 </a>
             </div>

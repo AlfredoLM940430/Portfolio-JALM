@@ -7,7 +7,7 @@ export const Appsalon = () => {
                 
                 <h4>AppSalon</h4>
 
-                <p className="mb-0">Aplicación en <span className="aqua">PHP</span> & <span className="aqua">MySQL</span>, de un salón de belleza. La App gestiona usuarios y administradores. Los usuarios mediante registro por correo, puede agendar citas y servicios. Administradores pueden agregar o quitar servicios, horas y días disponibles.</p>
+                <p className="mb-0">Aplicación en <span className="aqua">PHP</span> & <span className="aqua">MySQL</span>, de un salón de belleza. La App gestiona usuarios y administradores. Los usuarios mediante registro, puede agendar citas y servicios. Administradores pueden agregar o quitar servicios, horas y días disponibles.</p>
                     
                 <div className="mb-2">
                     <TecImg param={'php'}/>

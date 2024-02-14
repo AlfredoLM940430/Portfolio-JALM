@@ -8,6 +8,10 @@
     padding: 2rem 0 2rem 0;
 }
 
+#quien-soy label {
+    font-weight: bold;
+}
+
 #blur {
     max-width: 40rem;
     padding: 5rem;
@@ -138,4 +142,9 @@ select:focus {
 
 .tabs .tab-2:last-child [type="radio"]:checked + div {
     margin-left: -100%;
+}
+
+.about-h {
+    -webkit-text-stroke: .7px aqua; /* width and color */
+    color: rgb(0, 0, 0)
 }

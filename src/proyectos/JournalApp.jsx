@@ -15,7 +15,7 @@ export const JournalApp = () => {
                         <div>
                             <h5>JournalApp</h5>
 
-                            <p className="desc-pro">Es una aplicación con <span className="aqua">React</span> para crear notas, de ser necesario con imágenes, cuenta con registro y autenticación utilizando los servicios de <span className="aqua">Google</span>  en caso de requerirse. El proyecto cuenta con base de datos en <span className="aqua">Firebase</span>  donde se gestiona la app y <span className="aqua">Cloudinary</span> para la gestión de las imágenes. El fin de este proyecto es un primer contacto con <span className="aqua">Redux Devtools.</span></p>
+                            <p className="desc-pro">Aplicación web Full-Stack desarrollado con <span className="aqua">React</span>, tratando de representar una agenda. Se cuenta con registro y autenticación utilizando los servicios de <span className="aqua">Google</span> en este caso. El proyecto cuenta con base de datos en <span className="aqua">Firebase</span> donde se gestiona la app y <span className="aqua">Cloudinary</span> para la gestión de las imágenes. El fin de este proyecto es un primer contacto con <span className="aqua">Redux Devtools.</span></p>
 
                             <div className="mb-3">
 

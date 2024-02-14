@@ -33,7 +33,7 @@ export const HeaderView = () => {
                     <nav className="container-nav mt-3">
                         <a className="btn btn-c" href="#quien-soy">Quien Soy</a>
                         <a className="btn btn-c" href="#contacto">Contacto</a>
-                        <a className="btn btn-c" href="/José Alfredo López Mares.pdf">CV</a>
+                        <a className="btn btn-c" href="/CV_Jos_Alf_Lop_Mar.pdf">CV</a>
                     </nav>
                 </div>
 
@@ -41,7 +41,7 @@ export const HeaderView = () => {
             <div className="container container-presentacion" style={{marginTop: isMargin}}>
                 <div className="presentacion">
                     <h1>Hola! Soy <span className="aqua">Alfredo López</span>.</h1>
-                    <p>Programador de aplicaciones web, con conocimientos en frontend y backend.</p>
+                    <p>Programador en aplicaciones web, con conocimientos en desarrollo front-end y back-end.</p>
                     <div>
                         <a className="btn btn-a" href="#portafolio">Proyectos</a>
                     </div>

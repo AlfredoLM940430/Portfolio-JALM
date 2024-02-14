@@ -1,4 +1,4 @@
-import { Appsalon, AsistenciaApp, BienesRaices, BlogCafe, CRUD, CalendarApp, DevWebCamp, Eventos, FestivalMusica, GifExpertApp, HeroesApp, JournalApp, UpTask } from "../proyectos/";
+import { Appsalon, AsistenciaApp, BienesRaices, BlogCafe, CRUD, CalendarApp, DevWebCamp, Eventos, FestivalMusica, GifExpertApp, HeroesApp, JournalApp, UpTask, CasaJalisco } from "../proyectos/";
 import { useRender, useAuxiliar } from "../helpers/";
 import { AuxView } from "./AuxView";
 import { PortfolioApp } from "../proyectos/PortfolioApp";
@@ -7,6 +7,8 @@ export const ProyectosView = () => {
 
     const {isAux} = useAuxiliar();
     const {isShow, masToggle} = useRender(false);
+
+    console.log(isShow);
 
     return (
         <>
@@ -24,7 +26,7 @@ export const ProyectosView = () => {
                     <HeroesApp/>
                 </div>
                 <div className="row d-flex justify-content-center">
-                    <GifExpertApp/>
+                    <CasaJalisco/>
                     <UpTask/>
                     <PortfolioApp/>
                 </div>
@@ -42,13 +44,14 @@ export const ProyectosView = () => {
                     isShow && (
                         <div className="mas-proyectos mb-4" id="proyectos">
                             <div className="row d-flex justify-content-center">
+                                <GifExpertApp/>
                                 <FestivalMusica/>
-                                <AsistenciaApp/>
-                                <Eventos/>
+                                <BlogCafe/>
                             </div>
                             <div className="row d-flex justify-content-center">
+                                <AsistenciaApp/>
+                                <Eventos/>
                                 <CRUD/>
-                                <BlogCafe/>
                             </div>
                         </div>
                     )

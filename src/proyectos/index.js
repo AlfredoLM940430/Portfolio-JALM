@@ -11,3 +11,4 @@ export * from './GifExpertApp';
 export * from './HeroesApp';
 export * from './JournalApp';
 export * from './UpTask';
+export * from './CasaJalisco';

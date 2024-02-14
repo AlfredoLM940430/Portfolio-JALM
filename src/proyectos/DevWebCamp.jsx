@@ -9,7 +9,7 @@ export const DevWebCamp = () => {
                     <div className="left-right contenido" data-aos="fade-right">
                         <div>
                             <h5>DevWebCamp</h5>
-                            <p className="desc-pro">Aplicación de venta de tickets, desarrollado en <span className="aqua">PHP</span> cuenta con una arquitectura <span className="aqua">MVC</span>. La App cuanta con la funcionalidades de registro de usuarios y compra de tickets.
+                            <p className="desc-pro">Aplicación Full-Stack de venta de tickets, desarrollado con <span className="aqua">PHP</span> puro sin framework, cuenta con una arquitectura <span className="aqua">MVC</span>. La App cuanta con registro de usuarios y compra de tickets.
                                 el registro se gestiona mediante confirmación por email del usuario y la venta es gestiona con los servicios de <span className="aqua">PayPal</span>. Ademas de un CRUD para el admin.</p>
                             <div className="mb-3">
 
